@@ -207,7 +207,7 @@
           return (double)fechas.Count / numeroDias;
       }
   
-      // Exige ambos positivos en el mismo registro y cuenta expedientes únicos.
+     
       public int AccidentePorAlcoholDrogras()
       {
           return accidentes
@@ -251,7 +251,7 @@
               .ToDictionary(g => g.Key, g => g.Count());
       }
   
-      // Se conserva el nombre de la interfaz: esta consulta agrupa por año y mes, sin filtrar alcohol.
+      
       public Dictionary<(int anio, int mes), int> AccidentePorAnioAlcohol()
       {
           return accidentes
